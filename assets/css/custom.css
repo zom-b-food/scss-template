@@ -1,3 +1,4 @@
+/*# sourceMappingURL=custom.css.map */
 * {
   box-sizing: border-box;
 }
@@ -5,6 +6,11 @@
 .page-wrap {
   max-width: 800px;
   margin: 20px auto;
+}
+
+#header {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
 }
 
 .main-story {
@@ -74,7 +80,8 @@ h1.fixed-top {
 }
 
 .content {
-  margin-top: 125px;
+  margin-top: 25px;
+  border-top: 1px solid #dcdfe1;
 }
 
 @media screen and (max-width: 769px) {

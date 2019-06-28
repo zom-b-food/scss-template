@@ -1,18 +1,19 @@
-@charset "UTF-8";
-
-
-
-//variables
 $color_1: lightblue;
 $color_2: white;
-$background_color_1: rgba(255,255,255,.5);
+$background_color_1: rgba(255, 255, 255, 0.5);
 
+/*# sourceMappingURL=custom.css.map */
 * {
 	box-sizing: border-box;
 }
 .page-wrap {
 	max-width: 800px;
 	margin: 20px auto;
+}
+#header {
+	background-color:rgba(255,255,255,.75);
+	width:100%;
+
 }
 .main-story {
 	position: relative;
@@ -71,7 +72,8 @@ h1.fixed-top {
 	background-color: $background_color_1;
 }
 .content {
-	margin-top: 125px;
+	margin-top: 25px;
+	border-top:1px solid #dcdfe1;
 }
 @media screen and (max-width: 769px) {
 	h1 {

@@ -18,17 +18,67 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/scss-template.min.css" crossorigin="anonymous">
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<style type="text/css">
+		.fixed {
+		  position: fixed;
+		  top: 0;
+		  z-index:1030;
+		}
+		</style>
 	</head>
 	<body>
+		<script>
+		jQuery(document).ready(function($){
+				var offset = $( "#header" ).offset();
+				checkOffset();
+				$(window).scroll(function() {
+						checkOffset();
+				});
+				function checkOffset() {
+						if ( $(document).scrollTop() > offset.top){
+								$('#header').addClass('fixed');
+						} else {
+								$('#header').removeClass('fixed');
+						}
+				}
+		});
+		</script>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarsExample">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="page-wrap">
 			<div class="container">
-				<h1 class="fixed-top">Make This Responsive</h1>
+				<div id="header">
+					<h1 class="heading">Make This Responsive</h1>
+				</div>
+
 				<div class="content" id="mostImportant">
-					<p>While maintaining the heirarchy of importance. Create a js function to cycle through primary image. Use inline js to change secondary story images.</p>
-					<p>
-						Use SASS/SCSS to produce your css files. Also, use the package manager of your choice to concatenate and minify your js and css files.
-					</p>
+					<p>While maintaining the heirarchy of importance.</p>
+				<ul>
+					<li>Create a js function to cycle through primary image.</li>
+					<li>Use inline js to change secondary story images.</li>
+					<li>Make the main heading stick to the top on scrolling.</li>
+					<li>Use SASS/SCSS to produce your css files. </li>
+					<li>Use the package manager of your choice to concatenate and minify your js and css files. </li>
+					<li>Put your project on <a href="https://github.com/zom-b-food/scss-template" target="_blank">
+						GitHub
+					</a>.</li>
+				</ul>
 					<article class="main-story" id="next">
 						<img id="image" src="https://picsum.photos/800/391" alt="Placeholder Image" class="img-fluid"/>
 						<div class="story-intro">
@@ -97,11 +147,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 		<script src="assets/js/scss-template.min.js"></script>
 	</body>
 </html>
-
-
-
