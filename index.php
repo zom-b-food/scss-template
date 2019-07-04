@@ -80,7 +80,7 @@
 					</a>.</li>
 				</ul>
 					<article class="main-story" id="next">
-						<img id="image" src="https://picsum.photos/800/391" alt="Placeholder Image" class="img-fluid"/>
+						<img id="image" src="https://picsum.photos/800/391?image=162" alt="Placeholder Image" class="img-fluid"/>
 						<div class="story-intro">
 							<h1>Most Important Story</h1>
 							<p>This article has the most visual weight. <a href="https://picsum.photos/images" target=_"blank">Find out more here</a></p>

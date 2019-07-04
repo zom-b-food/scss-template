@@ -14,6 +14,8 @@ h2{font-size:1.25rem!important;margin:0 0 10px 0;}
 .last{margin-right:0;}
 h1.fixed-top{position:fixed;font-size:4.5rem;width:800px;margin:20px auto;z-index:1030;padding-left:10px;background-color:rgba(255,255,255,0.5);}
 .content{margin-top:25px;border-top:1px solid #dcdfe1;}
+@media screen and (min-width: 770px) and (max-width: 840px){article:last-of-type{margin-top:32px;}
+}
 @media screen and (max-width: 769px){h1{font-size:3rem;}
 h1.fixed-top{font-size:3rem;}
 .story-intro{background:rgba(0,0,0,0.25);}
